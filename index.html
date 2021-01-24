@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="#" type="x-icon">
+	<link rel="stylesheet" href="style.css">
+	<title>Currency Converter</title>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Currency Converter</h1>
+		</div>
+		<div class="date">2021-01-21</div>
+		<ul class="currencies">
+			<li class="currency base-currency" id="USD">
+			<img class="flag" src="http://www.geonames.org/flags/l/us.gif"></img>
+			<div class="info">
+				<p class="input"><span class="currency-symbol">&#36;</span><input placeholder="0.0000"></p>
+				<p class="currency-name">USD - US Dollar</p>
+				<p class="base-currency-rate">1 USD = 1 USD</p>
+			</div>
+			<span class="close">&times;</span>
+		</li>
+
+		<li class="currency" id="EUR">
+			<img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg"></img>
+			<div class="info">
+				<p class="input"><span class="currency-symbol">&euro;</span><input placeholder="0.0000"></p>
+				<p class="currency-name">EUR - Euro</p>
+				<p class="base-currency-rate">1 USD = 0.82 EUR</p>
+			</div>
+			<span class="close">&times;</span>
+		</li>
+
+		<li class="currency" id="JPY">
+			<img class="flag" src="http://www.geonames.org/flags/l/jp.gif"></img>
+			<div class="info">
+				<p class="input"><span class="currency-symbol">&#165;</span><input placeholder="0.0000"></p>
+				<p class="currency-name">JPY - Japanese Yen</p>
+				<p class="base-currency-rate">1 USD = 103.80 JPY</p>
+			</div>
+			<span class="close">&times;</span>
+		</li>
+
+		<li class="currency" id="GBP">
+			<img class="flag" src="http://www.geonames.org/flags/l/uk.gif"></img>
+			<div class="info">
+				<p class="input"><span class="currency-symbol">&#163;</span><input placeholder="0.0000"></p>
+				<p class="currency-name">GBR - British Pound</p>
+				<p class="base-currency-rate">1 USD = 0.73 GBR</p>
+			</div>
+			<span class="close">&times;</span>
+		</li>
+
+		<li class="currency" id="RUB">
+			<img class="flag" src="http://www.geonames.org/flags/l/ru.gif"></img>
+			<div class="info">
+				<p class="input"><span class="currency-symbol">&#8381;</span><input placeholder="0.0000"></p>
+				<p class="currency-name">RUB - Russian Ruble</p>
+				<p class="base-currency-rate">1 USD = 75.33 RUB</p>
+			</div>
+			<span class="close">&times;</span>
+		</li>
+
+		<li class="currency" id="CNY">
+			<img class="flag" src="http://www.geonames.org/flags/l/cn.gif"></img>
+			<div class="info">
+				<p class="input"><span class="currency-symbol">&#165;</span><input placeholder="0.0000"></p>
+				<p class="currency-name">CNY - Chinise Yuan Renminbi</p>
+				<p class="base-currency-rate">1 USD = 6.48 CNY</p>
+			</div>
+			<span class="close">&times;</span>
+		</li>
+
+		<li class="currency" id="INR">
+			<img class="flag" src="http://www.geonames.org/flags/l/in.gif"></img>
+			<div class="info">
+				<p class="input"><span class="currency-symbol">&#8377;</span><input placeholder="0.0000"></p>
+				<p class="currency-name">INR - Indian Rupee</p>
+				<p class="base-currency-rate">1 USD = 73.02 INR</p>
+			</div>
+			<span class="close">&times;</span>
+		</li>
+
+		</ul>
+		<button class="add-currency-btn ">Add Currency</button>
+		<ul class="add-currency-list">
+			<li data-currency="USD" class="disabled"><img class="flag" src="http://www.geonames.org/flags/l/us.gif"></img><span>USD - US Dollar</span></li>
+			<li data-currency="NZD" class="add-active"><img class="flag" src="http://www.geonames.org/flags/l/nz.gif"></img><span>NZD - New Zealand Dollar</span></li>
+			<li data-currency="CAD" class="add-active"><img class="flag" src="http://www.geonames.org/flags/l/ca.gif"></img><span>CAD - Canadian  Dollar</span></li>
+			<li data-currency="MXN" class="add-active"><img class="flag" src="http://www.geonames.org/flags/l/mx.gif"></img><span>MXN - Mexican Peso</span></li>
+
+
+		</ul>
+		
+	</div>
+	
+<script src="main.js"></script>
+</body>
+</html>
